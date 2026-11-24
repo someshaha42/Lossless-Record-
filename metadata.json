@@ -1,0 +1,6 @@
+{
+  "name": "FrameCut",
+  "description": "Professional screen and region recorder with browser display capture, real-time Canvas region cropping, and local photo and video crop export.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,108 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@font-face {
+  font-family: "Space Grotesk";
+  src: url("/fonts/space_grotesk.ttf") format("truetype");
+  font-weight: 400 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url("/fonts/plus_jakarta_sans.ttf") format("truetype");
+  font-weight: 400 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "JetBrains Mono";
+  src: url("/fonts/jetbrains_mono.ttf") format("truetype");
+  font-weight: 400 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --fc-bg: #f6f7fa;
+  --fc-surface: #ffffff;
+  --fc-surface-variant: #eceff5;
+  --fc-surface-high: #e2e6ef;
+  --fc-outline: #d1d8e4;
+  --fc-outline-variant: #e5e9f0;
+  --fc-on-surface: #111318;
+  --fc-on-surface-variant: #525b6c;
+  --fc-primary: #b91c1c;
+  --fc-on-primary: #ffffff;
+  --fc-primary-container: #fee2e2;
+  --fc-on-primary-container: #7f1d1d;
+  --fc-secondary: #2563eb;
+  --fc-on-secondary: #ffffff;
+  --fc-secondary-container: #dbeafe;
+  --fc-on-secondary-container: #1e3a8a;
+  --fc-tertiary: #059669;
+  --fc-on-tertiary: #ffffff;
+  --fc-error: #b91c1c;
+  --fc-error-container: #fee2e2;
+  --fc-on-error-container: #7f1d1d;
+
+  --fc-record-accent: #b91c1c;
+  --fc-record-deep: #b91c1c;
+  --fc-record-container: #fee2e2;
+  --fc-paused-accent: #d97706;
+  --fc-paused-container: #fef3c7;
+  --fc-ready-accent: #059669;
+  --fc-ready-container: #d1fae5;
+}
+
+.dark {
+  --fc-bg: #0d0f14;
+  --fc-surface: #151821;
+  --fc-surface-variant: #1e2330;
+  --fc-surface-high: #262c3b;
+  --fc-outline: #2d3446;
+  --fc-outline-variant: #232836;
+  --fc-on-surface: #f3f4f6;
+  --fc-on-surface-variant: #9ca3af;
+  --fc-primary: #dc2626;
+  --fc-on-primary: #ffffff;
+  --fc-primary-container: #3f1216;
+  --fc-on-primary-container: #ffdad6;
+  --fc-secondary: #60a5fa;
+  --fc-on-secondary: #0a1d3d;
+  --fc-secondary-container: #1e3254;
+  --fc-on-secondary-container: #d8e5ff;
+  --fc-tertiary: #10b981;
+  --fc-on-tertiary: #04261b;
+  --fc-error: #f87171;
+  --fc-error-container: #5c1616;
+  --fc-on-error-container: #fee2e2;
+
+  --fc-record-accent: #dc2626;
+  --fc-record-deep: #b91c1c;
+  --fc-record-container: #3f1216;
+  --fc-paused-accent: #d97706;
+  --fc-paused-container: #3a240b;
+  --fc-ready-accent: #10b981;
+  --fc-ready-container: #0c2e24;
+}
+
+body {
+  margin: 0;
+  background-color: var(--fc-bg);
+  color: var(--fc-on-surface);
+  font-family: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.font-display {
+  font-family: "Space Grotesk", "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+}
+
+.font-mono-tnum {
+  font-family: "JetBrains Mono", ui-monospace, monospace;
+  font-variant-numeric: tabular-nums;
+}
